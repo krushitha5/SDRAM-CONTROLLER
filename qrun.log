@@ -1,0 +1,122 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 16:38:17 on Feb 04,2025
+qrun sdram_top_test.sv 
+-- Skipping 'vlog sdram_top_test.sv -work ./work...'
+-- Skipping vopt
+# vsim -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt_1 -appendlog -l qrun.log -csession=incr -csessionid=2 
+# Start time: 16:38:18 on Feb 04,2025
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.sdr_tb(fast)
+# run -all
+#                 1110ns : Coming Out Of Reset
+#               101170ns : Precharge Command
+#               101190ns : Auto Refresh Command
+#               101270ns : Auto Refresh Command
+#               101350ns : Load Mode Register 0x032
+#               101350ns : mode: CAS Latency=0x3, Burst Length=0x4
+#               101950ns : Activate Command
+#               101950ns : Activate Command
+#               101970ns : Write Command
+#               101970ns :write: Bank=0x0, Row=0x000, Column=0x000, Data=0x4
+#               101990ns :write: Bank=0x0, Row=0x000, Column=0x001, Data=0x3
+#               102010ns :write: Bank=0x0, Row=0x000, Column=0x002, Data=0x2
+#               102030ns :write: Bank=0x0, Row=0x000, Column=0x003, Data=0x1
+#               102130ns : Activate Command
+#               102130ns : Activate Command
+#               102150ns : Write Command
+#               102150ns :write: Bank=0x2, Row=0x000, Column=0x000, Data=0xc
+#               102170ns :write: Bank=0x2, Row=0x000, Column=0x001, Data=0xb
+#               102190ns :write: Bank=0x2, Row=0x000, Column=0x002, Data=0xa
+#               102210ns :write: Bank=0x2, Row=0x000, Column=0x003, Data=0x9
+#               102310ns : Activate Command
+#               102310ns : Activate Command
+#               102330ns : Write Command
+#               102330ns :write: Bank=0x0, Row=0x000, Column=0x004, Data=0x4
+#               102350ns :write: Bank=0x0, Row=0x000, Column=0x005, Data=0x7
+#               102370ns :write: Bank=0x0, Row=0x000, Column=0x006, Data=0x6
+#               102390ns :write: Bank=0x0, Row=0x000, Column=0x007, Data=0x5
+#               102490ns : Activate Command
+#               102490ns : Row change detected. Issuing Precharge Command.
+#               102490ns : Activate Command
+#               102510ns : Write Command
+#               102510ns :write: Bank=0x0, Row=0x200, Column=0x004, Data=0x1
+#               102530ns :write: Bank=0x0, Row=0x200, Column=0x005, Data=0x1
+#               102550ns :write: Bank=0x0, Row=0x200, Column=0x006, Data=0x1
+#               102570ns :write: Bank=0x0, Row=0x200, Column=0x007, Data=0x1
+#               102670ns : Activate Command
+#               102670ns : Row change detected. Issuing Precharge Command.
+#               102670ns : Activate Command
+#               102690ns : Read Command
+#               102735ns : read: Bank=0x0, Row=0x000, Column=0x000, Data=0x4
+#               102755ns : read: Bank=0x0, Row=0x000, Column=0x001, Data=0x3
+#               102775ns : read: Bank=0x0, Row=0x000, Column=0x002, Data=0x2
+#               102795ns : read: Bank=0x0, Row=0x000, Column=0x003, Data=0x1
+#               102890ns : Activate Command
+#               102890ns : Activate Command
+#               102910ns : Read Command
+#               102955ns : read: Bank=0x2, Row=0x000, Column=0x000, Data=0xc
+#               102975ns : read: Bank=0x2, Row=0x000, Column=0x001, Data=0xb
+#               102995ns : read: Bank=0x2, Row=0x000, Column=0x002, Data=0xa
+#               103015ns : read: Bank=0x2, Row=0x000, Column=0x003, Data=0x9
+#               103110ns : Activate Command
+#               103110ns : Activate Command
+#               103130ns : Read Command
+#               103175ns : read: Bank=0x0, Row=0x000, Column=0x004, Data=0x4
+#               103195ns : read: Bank=0x0, Row=0x000, Column=0x005, Data=0x7
+#               103215ns : read: Bank=0x0, Row=0x000, Column=0x006, Data=0x6
+#               103235ns : read: Bank=0x0, Row=0x000, Column=0x007, Data=0x5
+#               103330ns : Activate Command
+#               103330ns : Row change detected. Issuing Precharge Command.
+#               103330ns : Activate Command
+#               103350ns : Read Command
+#               103395ns : read: Bank=0x0, Row=0x200, Column=0x004, Data=0x1
+#               103415ns : read: Bank=0x0, Row=0x200, Column=0x005, Data=0x1
+#               103435ns : read: Bank=0x0, Row=0x200, Column=0x006, Data=0x1
+#               103455ns : read: Bank=0x0, Row=0x200, Column=0x007, Data=0x1
+# the read count :    16
+# the write count :    16
+# Memory_read 4 
+# Memory 4 
+# Memory_read c 
+# Memory c 
+# Memory_read 3 
+# Memory 3 
+# Memory_read b 
+# Memory b 
+# Memory_read 2 
+# Memory 2 
+# Memory_read a 
+# Memory a 
+# Memory_read 1 
+# Memory 1 
+# Memory_read 9 
+# Memory 9 
+# ------------------------------------------------------------
+# ----------------------TEST PASS-----------------------------
+# ------------------------------------------------------------
+# ** Note: $stop    : sdram_top_test.sv(326)
+#    Time: 103470 ns  Iteration: 1  Instance: /sdr_tb/SDR_SDRAM
+# Break at sdram_top_test.sv line 326
+# Stopped at sdram_top_test.sv line 326
+#  quit -f
+# End time: 16:38:18 on Feb 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+End time: 16:38:19 on Feb 04,2025, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   0
